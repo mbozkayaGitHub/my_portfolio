@@ -19,34 +19,40 @@ const Navbar = () => {
         </button>
   
         {/* Sidebar */}
-        <div className={`bg-blue-500 p-4 w-64 ${isOpen ? 'block' : 'hidden'} sm:block`}>
-          <div className="flex items-center justify-center mb-4">
+        <div className={`bg-blue-500  p-4 w-64 ${isOpen ? 'block' : 'hidden'} sm:block`}>
+          <div className="flex items-center justify-center mb-20 mt-12">
             <img
-              className="w-12 h-12 rounded-full border-2 border-white"
+              className="w-36 h-36 rounded-full border-2 border-white"
               src="https://placekitten.com/200/200"  // Profil fotoğrafınızın URL'sini ekleyin
               alt="Profil"
             />
           </div>
-          <nav className="sm:block">
-            <ul>
-              <li className="mb-2">
-                <Link to="/" className="text-white hover:text-gray-200" onClick={toggleMenu}>
-                  Ana Sayfa
+          <nav className="sm:block item-center" >
+            <ul className='flex flex-col gap-10 bg-color bg-red-700'>
+              <li className="">
+                <Link to="/" className="text-white text-4xl  hover:text-lightblue-200 hover:underline" onClick={toggleMenu}>
+                  Home
                 </Link>
               </li>
-              <li className="mb-2">
-                <Link to="/hakkimda" className="text-white hover:text-gray-200" onClick={toggleMenu}>
-                  Hakkımda
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/skills" className="text-white hover:text-gray-200" onClick={toggleMenu}>
+        
+              <li className="">
+                <Link to="/skills" className="text-white text-4xl hover:text-gray-200" onClick={toggleMenu}>
                   Skills
                 </Link>
               </li>
-              <li className="mb-2">
-                <Link to="/contact" className="text-white hover:text-gray-200" onClick={toggleMenu}>
-                  İletişim
+              <li className="">
+                <Link to="/projects" className="text-white text-4xl hover:text-gray-200" onClick={toggleMenu}>
+                  Projects
+                </Link>
+              </li>
+              <li className="">
+                <Link to="/about" className="text-white text-4xl hover:text-gray-200" onClick={toggleMenu}>
+                  About
+                </Link>
+              </li>
+              <li className="">
+                <Link to="/contact" className="text-white text-4xl hover:text-gray-200" onClick={toggleMenu}>
+                  Contact
                 </Link>
               </li>
               {/* Diğer sayfa linkleri buraya eklenebilir */}
@@ -54,10 +60,8 @@ const Navbar = () => {
           </nav>
         </div>
   
-        {/* Ana içerik */}
-        <div className="flex-1 p-10">
-          {/* Ana içerik buraya eklenebilir */}
-        </div>
+        
+       
       </div>
       );
     };
