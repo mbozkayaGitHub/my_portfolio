@@ -9,7 +9,7 @@ const Home = () => {
       style={{ backgroundImage: `url('./images/background.jpg')` }}
       className=" w-full bg-cover bg-center flex flex-col items-center justify-center h-screen bg-gray-200 text-gray-800 p-10 "
     >
-      <h1 className="text-5xl mb-2">Hi, I am Mike</h1>
+      <h1 className="text-5xl mb-2  animate__animated animate__bounce">Hi, I am Mike</h1>
       
       <p className="text-xl mb-10 text-center">
         I am a full-stack web developer. 
