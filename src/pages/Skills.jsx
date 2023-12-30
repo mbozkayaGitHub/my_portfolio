@@ -24,15 +24,15 @@ const Skills = () => {
   return (
     <div
       style={{ backgroundImage: `url('./images/bg.jpg')` }}
-      className="w-full bg-cover bg-center  h-screen bg-gray-200 text-gray-800 p-10 "
+      className="w-full bg-cover bg-center  h-screen bg-gray-200 text-gray-800 "
     >
-      <div className="container flex justify-evenly  ">
-        <div className="frontend  ">
-          <div className="foto-fr flex justify-center">
+      <div className="container flex justify-evenly mt-10  ">
+        <div className="frontend ">
+          <div className="foto-fr flex justify-center mt-20 ">
             <img
-              src="./images/a.png"
+              src="./images/fe.png"
               alt=""
-              className="w-72 h-auto  animate__animated animate__rotateInDownLeft shadow-xl border border-yellow-600"
+              className="w-72 h-auto  animate__animated animate__rotateInDownLeft shadow-xl border border-yellow-600 rounded-md "
             />
           </div>
           <div className="fr flex justify-between">
@@ -141,25 +141,25 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="mb-4 mr-8 " >
           <img
-            src="./images/c.png"
+            src="./images/wd.jpg"
             alt="DDD"
-            className="w-96 h-auto  animate__animated animate__fadeInDown shadow-xl border border-slate-950"
+            className="w-96 h-auto  animate__animated animate__fadeInDown shadow-xl border border-slate-950 mr-8 rounded-md "
           />
-        </div>{" "}
+        </div>
         {/* Line */}
-        <div className="backend ">
+        <div className="backend  mt-20 mr-4 ">
           <div className="img-back">
             <img
-              src="./images/b.png"
+              src="./images/be.jpg"
               alt=""
-              className="w-72 h-auto animate__animated animate__rotateInDownRight  shadow-xl border border-violet-800"
+              className="w-72 h-auto animate__animated animate__rotateInDownRight  shadow-xl border border-violet-800 rounded-md"
             />
           </div>
           <div className="bck flex justify-between">
             <div className="bck1 mt-10">
-              {" "}
+ 
               <div className="flex items-center mt-4">
                 <FaNode
                   size={36}
